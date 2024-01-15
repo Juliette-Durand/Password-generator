@@ -1,0 +1,22 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "App password generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Juliette-Durand/Password-generator.git"
+  },
+  "author": "Juliette DURAND",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliette-Durand/Password-generator/issues"
+  },
+  "homepage": "https://github.com/Juliette-Durand/Password-generator#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

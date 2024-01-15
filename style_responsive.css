@@ -1,0 +1,57 @@
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 5% 10%;
+        padding: 30px;
+        align-items: flex-start;
+    }
+
+    h1{
+        font-weight: 900;
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    .submit {
+        padding: 5px 10px;
+        font-size: 0.9em;
+        border-radius: 0.9em;
+    }
+    
+    .submit:hover {
+        letter-spacing: 0;
+    }
+
+    .result {
+        margin: 0;
+        border-radius: 0.5em;
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    .copy {
+        padding: 5px 10px;
+        font-size: 0.9em;
+        border-radius: 0.9em;
+    }
+    
+    .copy:hover {
+        letter-spacing: 0;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .container {
+        margin: 5% 15%;
+    }
+
+    .result {
+        border-radius: 0.6em;
+        font-size: 24px;
+        padding: 10px 30px;
+    }
+}

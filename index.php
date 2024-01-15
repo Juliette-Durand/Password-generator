@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Générateur de mot de passe</title>
     <link href="style.css" rel="stylesheet">
+    <link href="style_responsive.css" rel="stylesheet">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="app.js" defer></script>    
 </head>
 <body>
-    <form class="container">
+    <form class="container" id="container">
         <h1>Générateur de mot de passe aléatoire</h1>
         <div>
             <input type="checkbox" id="numbers" name="numbers" />
@@ -24,13 +25,8 @@
         <label for="symbols">Avec des caractères spéciaux</label>
        </div>
        <div>
-            <select name="how_many_glyphs" id="how_many_glyphs">
+            <select name="how_many_glyphs" id="how_many_glyphs" required>
                 <option value="">Veuillez sélectionner</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5</option>
                  <option value="6">6</option>
                  <option value="7">7</option>
                  <option value="8">8</option>
@@ -42,6 +38,10 @@
                  <option value="14">14</option>
                  <option value="15">15</option>
                  <option value="16">16</option>
+                 <option value="17">17</option>
+                 <option value="18">18</option>
+                 <option value="19">19</option>
+                 <option value="20">20</option>
             </select>
         <label for="how_many_glyphs">Nombre de caractères</label><br>
        </div>
@@ -51,6 +51,11 @@
         </div>
       
         <div class="result" style="display:none;"></div>
+
+        <div class="button_container" style="display:none;" id="button_container_copy">
+            <input type="button" onclick="copierTexte()" class="copy" value="Copier" />
+        </div>
     </form>
+        
 </body>
 </html>

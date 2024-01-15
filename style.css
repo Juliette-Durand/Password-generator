@@ -4,9 +4,9 @@ body {
 }
 
 .container {
-    margin: 5em 25em;
-    padding: 3em;
-    height: auto;
+    margin: 5% 25%;
+    padding: 35px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.6em;
@@ -16,9 +16,12 @@ body {
 }
 
 .submit {
-    width: 16em;
-    height: 2.2em;
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
     color: white;
     background-color: #aa80f9;
     border-radius: 1em;
@@ -27,17 +30,17 @@ body {
 }
 
 .submit:hover {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     color: black;
     background-color: #a1f6ff;
     border-radius: 0.7em;
-    width:16.8em;
-    height: 2.5em;
+    padding: 8px 25px;
 }
 
 h1{
     font-weight: 900;
     font-size: 2em;
+    text-align: center;
 }
 
 .button_container{
@@ -47,10 +50,38 @@ h1{
 }
 
 .result {
-    margin-top: 1em;
-    border: solid 2px #aa80f9;
+    margin: 0.5em 0 0.5em 0;
+    border: solid 3px #aa80f9;
     border-radius: 0.7em;
     font-size: 28px;
     padding: 15px 35px;
     text-align: center;
+    overflow-x: auto;
+}
+
+label {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.copy {
+    width: auto;
+    height: auto;
+    padding: 8px 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+    background-color: #a1f6ff;
+    border-radius: 1em;
+    transition: 0.3s;
+    border: none;
+}
+
+.copy:hover {
+    letter-spacing: 0.3px;
+    color: white;
+    background-color: #aa80f9;
+    border-radius: 0.7em;
+    padding: 8px 25px;
 }

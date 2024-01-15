@@ -36,6 +36,7 @@ form.on("submit", function(e){
     var symbols = $("#symbols");
     var how_many_glyphs = $("#how_many_glyphs");
     var result = $(".result");
+    var btnCopy = $("#button_container_copy");
     const password = {
         includeNumbers: numbers.is(":checked"),
         includeLowerCase: true,
@@ -47,5 +48,12 @@ form.on("submit", function(e){
     var newPassword = generatePassword(passwordLength, password);
 
     result.css( "display", "block" );
+    btnCopy.css( "display", "block" );
     result.html(newPassword);
 })
+
+function copierTexte(){
+    var txt = $(".result");
+    console.log(txt.text());
+    navigator.clipboard.writeText(txt.text())
+}
